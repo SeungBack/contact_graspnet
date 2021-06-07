@@ -65,7 +65,7 @@ def show_image(rgb, segmap):
     plt.draw()
     plt.pause(0.001)
 
-def visualize_grasps(full_pc, pred_grasps_cam, scores, plot_opencv_cam=False, pc_colors=None, gripper_openings=None, gripper_width=0.08):
+def visualize_grasps(full_pc, pred_grasps_cam, scores, plot_opencv_cam=False, pc_colors=None, gripper_openings=None, gripper_width=0.08, screenshot=False):
     """Visualizes colored point cloud and predicted grasps. If given, colors grasps by segmap regions. 
     Thick grasp is most confident per segment. For scene point cloud predictions, colors grasps according to confidence.
 
